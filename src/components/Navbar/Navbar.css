@@ -1,0 +1,71 @@
+.top-el-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  @media (--mobile) {
+    position: relative;
+  }
+}
+
+.top-logo {
+  margin: 5px;
+  max-height: 37px;
+  cursor: pointer;
+  @media (--not-mobile) {
+    max-height: 60px;
+    margin: 15px;
+  }
+}
+
+.phone-wrap {
+  margin: 10px 10px 0 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    .red-dot {
+      transform: scale(1);
+    }
+  }
+
+  @media (--not-mobile) {
+    margin: 30px 35px 0 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      .red-dot {
+        transform: scale(1.4);
+      }
+    }
+  }
+}
+
+.red-dot {
+  transition: transform 0.3s ease-in-out;
+  height: 7px;
+  width: 7px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 2px;
+
+  @media (--not-mobile) {
+    margin-right: 5px;
+    height: 11px;
+    width: 11px;
+  }
+}
+
+.phone-num {
+  color: var(--text);
+  font-size: 16px;
+
+  @media (--not-mobile) {
+    font-size: 19px;
+  }
+}

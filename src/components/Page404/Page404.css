@@ -1,0 +1,6 @@
+.h1-404{
+    @media (--mobile) {
+        max-width: 50%;
+        font-size: 30px;
+    }
+}

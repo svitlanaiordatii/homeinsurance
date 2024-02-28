@@ -1,0 +1,12 @@
+
+:root {
+  --text: #000000;
+  --primary: #e44f35;
+  --hover: #b71d6d;
+  --primary2: #3986c1;
+  --bg: #f3faff;
+  --bg-width: calc(720px + (100vw - 1200px) / 2);
+  --shadow: 10px 10px 40px rgb(from var(--primary2) r g b / 20%);
+
+  --font-family: "Sarabun", sans-serif;
+}
