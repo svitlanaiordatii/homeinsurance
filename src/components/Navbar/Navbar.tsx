@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className="top-el-wrap">
+    <header className="top-el-wrap">
       <Link to="/">
         <img className="top-logo" src={logo} alt="Logo" />
       </Link>
@@ -15,7 +15,7 @@ const Navbar = () => {
           Call <span className="text-bold">(866) 111-2233</span>
         </a>
       </div>
-    </div>
+    </header>
   );
 };
 

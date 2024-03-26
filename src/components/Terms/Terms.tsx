@@ -68,7 +68,7 @@ const Terms = () => {
               viewport={{ once: true }}
             >
               <Link className="hero-cta" to="/">
-                Got to homepage
+                Go to homepage
               </Link>
             </motion.div>
           </motion.div>

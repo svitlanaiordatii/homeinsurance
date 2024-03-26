@@ -31,7 +31,7 @@ const Homepage = () => {
       <div className="blue-bg">
         <HomeAnim />
         <div className="container">
-          <motion.div
+          <motion.section
             className="hero-content"
             variants={basicAnimation}
             initial="hidden"
@@ -47,9 +47,9 @@ const Homepage = () => {
             <motion.div variants={basicAnimation} custom={2}>
               <HomeForm formLocation="hero" zip={zip} setZip={setZip} />
             </motion.div>
-          </motion.div>
+          </motion.section>
 
-          <motion.div
+          <motion.section
             variants={basicAnimation}
             initial="hidden"
             animate="visible"
@@ -126,11 +126,11 @@ const Homepage = () => {
                 </div>
               </motion.div>
             </div>
-          </motion.div>
+          </motion.section>
         </div>
       </div>
 
-      <div className="container">
+      <section className="container">
         <div className="block3-features-wrap">
           <motion.h2
             className="h2 home-h2"
@@ -227,11 +227,11 @@ const Homepage = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div className="red-wrap">
         <div className="container">
-          <motion.div
+          <motion.section
             className="bottom-cta-wrap"
             variants={basicInView}
             initial="hidden"
@@ -242,11 +242,11 @@ const Homepage = () => {
               Compare Insurance Offers Near You Now
             </h2>
             <HomeForm formLocation="footer" zip={zip} setZip={setZip} />
-          </motion.div>
+          </motion.section>
 
           <div className="home-footer-divider" />
 
-          <div className="footer-wrap">
+          <footer className="footer-wrap">
             <img className="logo-footer" src={logoWhite} alt="Logo" />
             <div className="footer-text">
               <Link to={"/terms"} className="footer-link">
@@ -264,7 +264,7 @@ const Homepage = () => {
               </a>
               <div>©{date.getFullYear()}</div>
             </div>
-          </div>
+          </footer>
         </div>
       </div>
 
